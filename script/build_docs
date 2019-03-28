@@ -1,0 +1,3 @@
+#!/bin/sh
+rm -i InfoSig-docs-*.tar.bz2
+tar cvvjf InfoSig-docs-`date -I`.tar.bz2  doc/InfoSig\ API/

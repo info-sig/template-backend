@@ -1,0 +1,6 @@
+#!/bin/sh
+mkdir -p tmp/pids 2>/dev/null
+mkdir log 2>/dev/null
+
+# PRIMARY_PROCESS=true bundle exec sidekiq -r ./config/environment.rb -e development -q import_market_pairs,3 -q default,3
+bundle exec ruby config/sidekiq.rb -C config/sidekiq.yml -r ./config/environment.rb

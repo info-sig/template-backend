@@ -1,0 +1,13 @@
+# editor files
+*.swp
+*.idea
+.env
+
+# tmp & log folder
+/tmp
+/log
+
+# built api specs
+./*-docs-*.tar.bz2
+
+nailgun_config

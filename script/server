@@ -1,0 +1,5 @@
+#!/bin/sh
+mkdir -p tmp/pids 2>/dev/null
+mkdir log 2>/dev/null
+
+bundle exec puma -v -C config/puma.rb

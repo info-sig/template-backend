@@ -1,0 +1,15 @@
+import_all_pairs:
+    description: "Import all exchange market pairs"
+    class: 'ExchangeApi::ImportPairs::AllViaSidekiq'
+#    every: '180s'
+    cron: '*/2 * * * *'
+
+destroy_old_market_pairs:
+    description: "Destroys old market pairs"
+    class: 'MarketPair::PurgeOldPairs'
+    cron: '*/10 * * * *'
+
+import_coinmarketcap_data:
+    description: "Imports coinmarketcap.com data"
+    class: 'CryptocurrenciesImporter'
+    cron: '15 * * * *'

@@ -1,0 +1,2 @@
+#!/bin/sh
+rvm use ruby 2.6.0

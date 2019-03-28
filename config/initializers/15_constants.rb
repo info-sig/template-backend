@@ -1,0 +1,1 @@
+APP_NAME = InfoSig.get_env 'APP_NAME', 'unknown'

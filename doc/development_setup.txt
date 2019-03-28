@@ -1,0 +1,9 @@
+Execute following SQL script in Postgres:
+
+CREATE USER test WITH ENCRYPTED PASSWORD 'test';
+CREATE DATABASE __my_app___development OWNER test;
+CREATE DATABASE __my_app___test OWNER test;
+CREATE DATABASE __my_app___test_0 OWNER test;
+CREATE DATABASE __my_app___test_1 OWNER test;
+CREATE DATABASE __my_app___test_2 OWNER test;
+CREATE DATABASE __my_app___test_3 OWNER test;
